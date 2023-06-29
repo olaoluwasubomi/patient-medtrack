@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical History</title>
+    <link rel="stylesheet" href="history.css">
+    <link rel="icon" type="x-icon" href="img/logo-black.png">
+</head>
+<body>
+    <section>
+        <div class="bug-size" id="bugg">
+            <img src="img/icon-hamburger.svg" alt="Hambugger" class="bug" id="arrow">
+        </div>
+        <div class="navigation" id="open">
+            <div class="logo">
+                <img src="img/cancel.png" alt="Cancel Sign" id="remove" class="cancel">
+                <img src="img/logo-black.png" alt="Logo" class="icon">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="dashboard.html">dashboard</a></li>
+                    <li><a href="appointment.html">appointments</a></li>
+                    <li><a href="medication.html">medications</a></li>
+                    <li><a href="history.html">medical history</a></li>
+                    <li><a href="profile.html">profile</a></li>
+                    <li><a href="index.html">log out</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="past-medical-condition">
+            <p>past medical conditions</p>
+            <div style="overflow-x: auto;">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>medical condition</th>
+                            <th>type</th>
+                            <th>year</th>
+                            <th>treatment / management</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Diabetes Mellitus</td>
+                            <td>Type 2 diabetis</td>
+                            <td>2020</td>
+                            <td>Managed with oral medication and lifestyle modifications</td>
+                        </tr>
+                        <tr>
+                            <td>Hypertension</td>
+                            <td>Stage 2 hypertension</td>
+                            <td>2021</td>
+                            <td>Managed with antihypertensive medication</td>
+                        </tr>
+                        <tr>
+                            <td>Asthma</td>
+                            <td>Allergic asthma</td>
+                            <td>Childhood</td>
+                            <td>Requires the use of an inhaler for symptom control </td>
+                        </tr>
+                        <tr>
+                            <td>Gastroesophageal Reflux Disease (GERD)</td>
+                            <td>Chronic acid reflux </td>
+                            <td>2023</td>
+                            <td>Managed with proton pump inhibitors and dietary modifications</td>
+                        </tr>
+                        <tr>
+                            <td>Gastroesophageal Reflux Disease (GERD)</td>
+                            <td>Chronic acid reflux </td>
+                            <td>2023</td>
+                            <td>Managed with proton pump inhibitors and dietary modifications</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="past-medications">
+            <p>past medications</p>
+            <div style="overflow-x: auto;">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>medication name</th>
+                            <th>dosage</th>
+                            <th>start date</th>
+                            <th>end date</th>
+                        </tr>
+                    </thead>
+                    <tr>
+                        <td>Metformin</td>
+                        <td>1000mg</td>
+                        <td>Jan 1, 2020</td>
+                        <td>Jan 10,2020</td>
+                    </tr>
+                    <tr>
+                        <td>Lisinopril</td>
+                        <td>10mg</td>
+                        <td>Jan 19, 2020</td>
+                        <td>Jan 27,2020</td>
+                    </tr>
+                    <tr>
+                        <td>Albuterol Inhaler</td>
+                        <td>1000mg</td>
+                        <td>Jan 1, 2020</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>Levothyroxine</td>
+                        <td>50mcg</td>
+                        <td>March 17, 2022</td>
+                        <td>April 24,2022</td>
+                    </tr>
+                    <tr>
+                        <td>Omeprazole</td>
+                        <td>20mg</td>
+                        <td>November 9, 2022</td>
+                        <td>November 20,2022</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="surgical-history">
+            <p>surgical history</p>
+            <div class="surgical-text">
+                <p>no surgical history</p>
+            </div>
+        </div>
+    </section>
+</body>
+
+<script src="app.js"></script>
+</html>
