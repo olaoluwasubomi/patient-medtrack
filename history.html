@@ -36,41 +36,41 @@
                     <thead>
                         <tr>
                             <th>medical condition</th>
-                            <th>type</th>
+                            <!-- <th>type</th> -->
                             <th>year</th>
                             <th>treatment / management</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td>Diabetes Mellitus</td>
-                            <td>Type 2 diabetis</td>
+                            <td>Sickle Cell Crisis</td>
+                            <!-- <td>Type 2 diabetis</td> -->
                             <td>2020</td>
-                            <td>Managed with oral medication and lifestyle modifications</td>
+                            <td>Managed with Analgesis</td>
                         </tr>
                         <tr>
-                            <td>Hypertension</td>
-                            <td>Stage 2 hypertension</td>
+                            <td>Anemia</td>
+                            <!-- <td>Stage 2 hypertension</td> -->
                             <td>2021</td>
-                            <td>Managed with antihypertensive medication</td>
+                            <td>Managed with Iron Supplements</td>
                         </tr>
                         <tr>
-                            <td>Asthma</td>
-                            <td>Allergic asthma</td>
-                            <td>Childhood</td>
-                            <td>Requires the use of an inhaler for symptom control </td>
-                        </tr>
-                        <tr>
-                            <td>Gastroesophageal Reflux Disease (GERD)</td>
-                            <td>Chronic acid reflux </td>
+                            <td>Acute Chest Syndrome</td>
+                            <!-- <td>Allergic asthma</td> -->
                             <td>2023</td>
-                            <td>Managed with proton pump inhibitors and dietary modifications</td>
+                            <td>Treated with Ceftriaxone Antibiotics</td>
                         </tr>
                         <tr>
-                            <td>Gastroesophageal Reflux Disease (GERD)</td>
-                            <td>Chronic acid reflux </td>
+                            <td>Stroke</td>
+                            <!-- <td>Chronic acid reflux </td> -->
                             <td>2023</td>
-                            <td>Managed with proton pump inhibitors and dietary modifications</td>
+                            <td>Analgesics</td>
+                        </tr>
+                        <tr>
+                            <td>Leg Ulcers</td>
+                            <!-- <td>Chronic acid reflux </td> -->
+                            <td>2023</td>
+                            <td>Managed with Doxycycline Antibiotics</td>
                         </tr>
                     </tbody>
                 </table>
@@ -90,31 +90,31 @@
                         </tr>
                     </thead>
                     <tr>
-                        <td>Metformin</td>
+                        <td>Analgesis</td>
                         <td>1000mg</td>
                         <td>Jan 1, 2020</td>
                         <td>Jan 10,2020</td>
                     </tr>
                     <tr>
-                        <td>Lisinopril</td>
+                        <td>Iron Supplements</td>
                         <td>10mg</td>
-                        <td>Jan 19, 2020</td>
-                        <td>Jan 27,2020</td>
+                        <td>Jan 19, 2021</td>
+                        <td>Jan 27,2021</td>
                     </tr>
                     <tr>
-                        <td>Albuterol Inhaler</td>
+                        <td>Ceftriaxone Antibiotics</td>
                         <td>1000mg</td>
                         <td>Jan 1, 2020</td>
                         <td>-</td>
                     </tr>
                     <tr>
-                        <td>Levothyroxine</td>
+                        <td>Doxycycline Antibiotics</td>
                         <td>50mcg</td>
                         <td>March 17, 2022</td>
                         <td>April 24,2022</td>
                     </tr>
                     <tr>
-                        <td>Omeprazole</td>
+                        <td>Analgesics</td>
                         <td>20mg</td>
                         <td>November 9, 2022</td>
                         <td>November 20,2022</td>
@@ -129,8 +129,23 @@
                 <p>no surgical history</p>
             </div>
         </div>
+
+        <div class="chat-icon">
+            <img src="img/Message-Free-Icon-fidsw.png" alt="" id="image">
+            <img src="img/cancel.png" alt="" id="cancel" style="display:none;" >
+        </div>
+        <div class="chat-container" id="chat">
+            <div class="break">
+                <div class="chat-messages" id="chat-messages"></div>
+                <div class="chat-input">
+                    <input type="text" id="message-input" placeholder="Type your message...">
+                    <button id="send-button">Send</button>
+                </div>
+            </div>
+        </div>
     </section>
 </body>
 
 <script src="app.js"></script>
+<script src="communicate.js"></script>
 </html>

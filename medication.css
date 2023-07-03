@@ -60,7 +60,34 @@ nav ul li a{
     width:100%;
     /* border:1px solid red; */
 }
-.medication-table table th , .dosage-table table th{
+.dosage-table table{
+    border-collapse:collapse;
+}
+.dosage-table table th,td{
+    border:1px solid #b9b9b9;
+    padding:10px;
+    font-family: 'Montserrat', sans-serif;
+    font-size:0.95em;
+    text-align:start;
+    font-weight:lighter;
+}
+.dosage-table table td li{
+    list-style:none;
+    margin:10px auto 0;
+}
+
+.dosage-table table th{
+    padding:15px;
+    text-align:center;
+    color:#fff;
+    font-family: 'Montserrat', sans-serif;
+    font-size:0.8em;
+    font-weight:lighter;
+}
+.dosage-table table td{
+    outline:none;
+}
+.medication-table table th{
     padding:15px;
     text-align:center;
     font-family: 'Montserrat', sans-serif;
@@ -71,7 +98,7 @@ nav ul li a{
     font-weight:light;
     text-transform:capitalize;
 }
-.medication-table table td,.dosage-table table td{
+.medication-table table td{
     padding:10px;
     font-family: 'Montserrat', sans-serif;
     font-size:0.95em;
@@ -101,59 +128,70 @@ nav ul li a{
     border:none;
     margin:0 auto;
 }
-.interaction-quotes{
-    display:flex;
-    align-items:start;
-    justify-content:space-between;
+.chat-icon{
+    position: fixed;
+    bottom:-1px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: #228B22;
+    border-radius: 50%;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    cursor: pointer;
+    z-index: 9999;
+}
+.chat-icon img{
+    width:50%;
+}
+.chat-container{
+    /* background:red; */
+    margin:0 auto 20px;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
     width:100%;
-    margin:5px auto 0;
-    padding:10px 20px;
-}
-.interaction{
-    width:33%;
-    /* background:red; */
-}
-.interaction h5{
-    text-transform:capitalize;
-    font-size:1.5em;
-    font-family: 'Montserrat', sans-serif;
-    /* text-align:center; */
-}
-.interaction ul{
-    margin:10px auto;
-}
-.interaction ul li{
-    list-style:circle;
-    padding:10px 0;
-}
-.quotes{
-    width:33%;
-    /* background:red; */
-    padding:25px;
-    position:relative;
-    /* margin:auto; */
-}
-.myslides{
     display:none;
 }
-.myslides p{
-    font-size:1.2em;
-    font-style:italic;
+.break{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    flex-direction:column;
+    width:30%;
+    margin:0px 960px 0px;
+    background:#E8F5E9;
+    /* background:rgba(0,0,0,.7); */
+    /* padding:20px; */
 }
-.fade{
-    animation-name: fade;
-    animation-duration: 1.5s;
-}
-@keyframes fade{
-    from {opacity: .4}
-    to {opacity: 1}
-}
-.interaction-image{
-    width:33%;
-    /* background:red; */
-}
-.interaction-image img{
+.chat-messages{
+    /* border:1px solid red; */
+    padding:10px 10px 500px;
     width:100%;
+    color:black;
+}
+.chat-input{
+    margin:10px auto 0;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    width:100%;
+}
+.chat-input input{
+    width:80%;
+    padding:10px 5px;
+    border:none;
+    outline:none;
+    background:#eeeeee;
+    color:black;
+}
+.chat-input button{
+    border:none;
+    padding:10px;
+    width:19%;
+    cursor:pointer;
 }
 @media screen and (max-width:900px){
     .bug-size{
@@ -198,27 +236,13 @@ nav ul li a{
         margin:0 auto;
         /* padding:10px 20px */
     }
-    .interaction-quotes{
-        flex-direction:column;
-    }
-    .interaction{
+    .break{
         width:100%;
+        margin:0 auto;
+        background:#E8F5E9;
     }
-    .interaction h5{
-        font-size:1.2em;
-    }
-    .interaction ul li{
-        list-style:none;
-    }
-    .quotes{
-        width:100%;
-        padding:0;
-    }
-    .myslides p{
-        font-size:1em;
-    }
-    .interaction-image{
-        width:100%;
-        margin:10px auto 0;
+    .chat-messages{
+        padding:10px 10px 300px;
+        color:#fff;
     }
 }

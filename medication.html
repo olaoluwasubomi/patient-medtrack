@@ -36,7 +36,7 @@
                     <thead>
                         <tr>
                             <th>drug name</th>
-                            <th>form</th>
+                            <!-- <th>form</th> -->
                             <th>type</th>
                             <th>dosage</th>
                             <th>reason</th>
@@ -45,43 +45,43 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td>Amoxicillin</td>
-                            <td>Capsule</td>
-                            <td>Antibiotic</td>
+                            <td>Analgesics</td>
+                            <!-- <td>Capsule</td> -->
+                            <td>Acetaminophen</td>
                             <td>325g</td>
-                            <td>Pain relief and fever reduction</td>
+                            <td>Sickle Cell Crisis</td>
                             <td>Incomplete</td>
                         </tr>
                         <tr>
-                            <td>Ibuprofen</td>
-                            <td>Tablet</td>
-                            <td>Nonsteroidal Anti-inflammatory Drug (NSAID)</td>
+                            <td>Iron Supplements</td>
+                            <!-- <td>Tablet</td> -->
+                            <td>Ferrous Sulfate</td>
                             <td>500g</td>
-                            <td>Antibiotic treatment for bacterial infections</td>
+                            <td>Anemia</td>
                             <td>Completed</td>
                         </tr>
                         <tr>
-                            <td>Ibuprofen</td>
-                            <td>Tablet</td>
-                            <td>Antibiotic</td>
+                            <td>Antibiotics</td>
+                            <!-- <td>Tablet</td> -->
+                            <td>Ceftriaxone</td>
                             <td>500g</td>
-                            <td>Bronchodilator for asthma relief</td>
+                            <td>Acute Chest Syndrome</td>
                             <td>Incomplete</td>
                         </tr>
                         <tr>
-                            <td>Ibuprofen</td>
-                            <td>Tablet</td>
-                            <td>Nonsteroidal Anti-inflammatory Drug (NSAID)</td>
+                            <td>Analgesics</td>
+                            <!-- <td>Tablet</td> -->
+                            <td>Opioids</td>
                             <td>500g</td>
-                            <td>Cholesterol-lowering medication for cardiovascular health</td>
+                            <td>Stroke</td>
                             <td>Completed</td>
                         </tr>
                         <tr>
-                            <td>Ibuprofen</td>
-                            <td>Tablet</td>
-                            <td>Antibiotic</td>
+                            <td>Antibiotics</td>
+                            <!-- <td>Tablet</td> -->
+                            <td>Doxycycline</td>
                             <td>500g</td>
-                            <td>Antidepressant for the treatment of depression and anxiety</td>
+                            <td>Leg Ulcer</td>
                             <td>Incomplete</td>
                         </tr>
                     </tbody>
@@ -98,110 +98,129 @@
                 <table>
                     <thead>
                         <tr>
-                            <th>medication</th>
-                            <th>dosage instruction</th>
-                            <th>date</th>
-                            <th>time</th>
-                            <th>usage status</th>
+                            <th>Medicine Name</th>
+                            <th>Dosage</th>
+                            <th>Frequency</th>
+                            <th>Precaution</th>
+                            <th>Date</th>
+                            <th>Time</th>
+                            <th>status</th>
                         </tr>
                         <tr>
-                            <td>Aspirin</td>
-                            <td>Take 1 tablet in the morning, 1 in the afternoon and 1 in the night</td>
-                            <td>
-                                <label for="date">Enter the date</label>
-                                <input type="date">
+                            <td contenteditable="false">Analgesics</td>
+                            <td contenteditable="false">250mg</td>
+                            <td contenteditable="false">1-1-1</td>
+                            <td contenteditable="false">
+                                <ul>
+                                    <li>Do not use without eating</li>
+                                    <li>Ensure you take it with water not carbonated drinks</li>
+                                    <li>Do not use if you are pregnant</li>
+                                </ul>
                             </td>
-                            <td>
-                                <label for="time">Enter the time</label>
-                                <input type="time">
-                            </td>
-                            <td>
-                                <input type="checkbox" name="usagestatus" value="taken">Taken
-                                <input type="checkbox" name="usagestatus" value="not taken">Not Taken
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Amoxicillin</td>
-                            <td>Take 1 tablet in the morning and 1 in the night</td>
-                            <td>
-                                <label for="date">Enter the date</label>
-                                <input type="date">
-                            </td>
-                            <td>
-                                <label for="time">Enter the time</label>
-                                <input type="time">
-                            </td>
-                            <td>
-                                <input type="checkbox" name="usagestatus" value="taken">Taken
-                                <input type="checkbox" name="usagestatus" value="not taken">Not Taken
+                            <td contenteditable="true"></td>
+                            <td contenteditable="true"></td>
+                            <td contenteditable="true">
+                                <label for="taken">Taken</label>
+                                <input type="checkbox" name="taken" value="Taken">
+                                <label for="nottaken">Not Taken</label>
+                                <input type="checkbox" name="nottaken" value="Not Taken">
                             </td>
                         </tr>
                         <tr>
-                            <td>Lisinopril</td>
-                            <td>Take 1 tablet in the night</td>
-                            <td>
-                                <label for="date">Enter the date</label>
-                                <input type="date">
+                            <td contenteditable="false">Iron Supplements</td>
+                            <td contenteditable="false">250mg</td>
+                            <td contenteditable="false">1-1-1</td>
+                            <td contenteditable="false">
+                                <ul>
+                                    <li>Do not use without eating</li>
+                                    <li>Ensure you take it with water not carbonated drinks</li>
+                                    <li>Do not use if you are pregnant</li>
+                                </ul>
                             </td>
-                            <td>
-                                <label for="time">Enter the time</label>
-                                <input type="time">
-                            </td>
-                            <td>
-                                <input type="checkbox" name="usagestatus" value="taken">Taken
-                                <input type="checkbox" name="usagestatus" value="not taken">Not Taken
-                            </td>
-                        </tr>
-                        <tr>
-                            <td> Sertraline</td>
-                            <td>Take 1 tablet in the night</td>
-                            <td>
-                                <label for="date">Enter the date</label>
-                                <input type="date">
-                            </td>
-                            <td>
-                                <label for="time">Enter the time</label>
-                                <input type="time">
-                            </td>
-                            <td>
-                                <input type="checkbox" name="usagestatus" value="taken">Taken
-                                <input type="checkbox" name="usagestatus" value="not taken">Not Taken
+                            <td contenteditable="true"></td>
+                            <td contenteditable="true"></td>
+                            <td contenteditable="true">
+                                <label for="taken">Taken</label>
+                                <input type="checkbox" name="taken" value="Taken">
+                                <label for="nottaken">Not Taken</label>
+                                <input type="checkbox" name="nottaken" value="Not Taken">
                             </td>
                         </tr>
                         <tr>
-                            <td colspan="4">
-                                <button onclick="clickMe()" class="submit-btn">Submit</button>
+                            <td contenteditable="false">Antibiotics</td>
+                            <td contenteditable="false">250mg</td>
+                            <td contenteditable="false">1-1-1</td>
+                            <td contenteditable="false">
+                                <ul>
+                                    <li>Do not use without eating</li>
+                                    <li>Ensure you take it with water not carbonated drinks</li>
+                                    <li>Do not use if you are pregnant</li>
+                                </ul>
+                            </td>
+                            <td contenteditable="true"></td>
+                            <td contenteditable="true"></td>
+                            <td contenteditable="true">
+                                <label for="taken">Taken</label>
+                                <input type="checkbox" name="taken" value="Taken">
+                                <label for="nottaken">Not Taken</label>
+                                <input type="checkbox" name="nottaken" value="Not Taken">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td contenteditable="false">Analgesics</td>
+                            <td contenteditable="false">250mg</td>
+                            <td contenteditable="false">1-1-1</td>
+                            <td contenteditable="false">
+                                <ul>
+                                    <li>Do not use without eating</li>
+                                    <li>Ensure you take it with water not carbonated drinks</li>
+                                    <li>Do not use if you are pregnant</li>
+                                </ul>
+                            </td>
+                            <td contenteditable="true"></td>
+                            <td contenteditable="true"></td>
+                            <td contenteditable="true">
+                                <label for="taken">Taken</label>
+                                <input type="checkbox" name="taken" value="Taken">
+                                <label for="nottaken">Not Taken</label>
+                                <input type="checkbox" name="nottaken" value="Not Taken">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td contenteditable="false">Antibiotics</td>
+                            <td contenteditable="false">250mg</td>
+                            <td contenteditable="false">1-1-1</td>
+                            <td contenteditable="false">
+                                <ul>
+                                    <li>Do not use without eating</li>
+                                    <li>Ensure you take it with water not carbonated drinks</li>
+                                    <li>Do not use if you are pregnant</li>
+                                </ul>
+                            </td>
+                            <td contenteditable="true"></td>
+                            <td contenteditable="true"></td>
+                            <td contenteditable="true">
+                                <label for="taken">Taken</label>
+                                <input type="checkbox" name="taken" value="Taken">
+                                <label for="nottaken">Not Taken</label>
+                                <input type="checkbox" name="nottaken" value="Not Taken">
                             </td>
                         </tr>
                     </thead>
                 </table>
             </div>
         </div>
-
-        <div class="interaction-quotes">
-            <div class="interaction">
-                <h5>Warnings</h5>
-                <ul>
-                    <li>Do not take Aspirin without eating</li>
-                    <li>Ensure that you take Amoxicillin with food</li>
-                    <li>Do not use any of these medications with <b>carbonated</b> drinks</li>
-                    <li>Sertraline should be used in the morning and in the night</li>
-                    <li>Lisinopril can be used without food</li>
-                </ul>
-            </div>
-            <div class="quotes">
-                <div class="myslides fade">
-                    <p>"Medicine is not only a science; it is also an art. It does not consist of compounding pills and plasters; it deals with the very processes of life, which must be understood before they may be guided." - Paracelsus</p>
+        <div class="chat-icon">
+            <img src="img/Message-Free-Icon-fidsw.png" alt="" id="image">
+            <img src="img/cancel.png" alt="" id="cancel" style="display:none;" >
+        </div>
+        <div class="chat-container" id="chat">
+            <div class="break">
+                <div class="chat-messages" id="chat-messages"></div>
+                <div class="chat-input">
+                    <input type="text" id="message-input" placeholder="Type your message...">
+                    <button id="send-button">Send</button>
                 </div>
-                <div class="myslides fade">
-                    <p>"A physician's role extends beyond the prescription pad; it is a sacred duty to listen, understand, and provide solace to those in need, for healing begins with compassionate connection." - Unknown</p>
-                </div>
-                <div class="myslides fade">
-                    <p>"The practice of medicine is not solely about curing diseases; it is about kindling a flicker of light in the darkest moments, offering comfort, and walking alongside patients on their journey to wellness." - Unknown</p>
-                </div>
-            </div>
-            <div class="interaction-image">
-                <img src="img/shutterstock_544348294.webp" alt="Pill Image">
             </div>
         </div>
     </section>
@@ -213,5 +232,5 @@
     }
 </script>
 <script src="app.js"></script>
-<script src="medication.js"></script>
+<script src="communicate.js"></script>
 </html>
